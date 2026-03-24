@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <rect x="4" y="8" width="32" height="32" rx="8" fill="#2BB5A0"/>
+  <path d="M14 20v4a6 6 0 0012 0v-4" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="20" cy="18" r="4" stroke="#fff" stroke-width="2.5" fill="none"/>
+  <text x="44" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#1a1a2e">User</text>
+  <text x="80" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#2BB5A0">Gate</text>
+</svg>

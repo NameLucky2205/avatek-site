@@ -51,6 +51,9 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { href: "/about", label: "О компании" },
+                { href: "/news", label: "Новости" },
+                { href: "/cases", label: "Кейсы" },
+                { href: "/partners", label: "Партнёры" },
                 { href: "/avareange", label: "AVAREANGE" },
                 { href: "/contacts", label: "Контакты" },
               ].map((item) => (

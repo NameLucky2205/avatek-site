@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <path d="M24 4L4 24l20 20 20-20L24 4z" fill="#00A88E"/>
+  <path d="M24 10l-14 14 14 14 14-14L24 10z" fill="#fff"/>
+  <path d="M24 14l-10 10 10 10 10-10L24 14z" fill="#00A88E"/>
+  <text x="52" y="32" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="#1a1a2e">Kaspersky</text>
+</svg>

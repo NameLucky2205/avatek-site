@@ -7,8 +7,11 @@ import { Menu, X, Shield } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Главная" },
+  { href: "/news", label: "Новости" },
   { href: "/services", label: "Услуги" },
+  { href: "/cases", label: "Кейсы" },
   { href: "/avareange", label: "AVAREANGE" },
+  { href: "/partners", label: "Партнёры" },
   { href: "/about", label: "О компании" },
   { href: "/contacts", label: "Контакты" },
 ];

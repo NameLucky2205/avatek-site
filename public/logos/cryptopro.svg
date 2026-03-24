@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <circle cx="24" cy="24" r="18" fill="#003DA5"/>
+  <path d="M16 20a10 10 0 0116 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M19 24a7 7 0 0110 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="24" cy="28" r="2" fill="#fff"/>
+  <text x="50" y="28" font-family="Arial, sans-serif" font-weight="700" font-size="13" fill="#003DA5">КриптоПро</text>
+  <text x="50" y="40" font-family="Arial, sans-serif" font-weight="400" font-size="9" fill="#666">CryptoPro</text>
+</svg>
