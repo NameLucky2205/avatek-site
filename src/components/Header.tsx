@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Главная" },
@@ -24,15 +24,16 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <Shield className="h-8 w-8 text-accent transition-colors group-hover:text-accent-hover" />
-            <span className="text-xl font-bold tracking-tight">
-              AVA<span className="text-accent">TEK</span>
-            </span>
+          <Link href="/" className="flex items-center group shrink-0">
+            <img
+              src="/brand/logo-white-horizontal.svg"
+              alt="AVATEK"
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -55,7 +56,7 @@ export function Header() {
             </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-text-secondary hover:text-text-primary"
+              className="lg:hidden p-2 text-text-secondary hover:text-text-primary"
               aria-label="Меню"
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -71,7 +72,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl"
+            className="lg:hidden border-t border-border bg-background/95 backdrop-blur-xl"
           >
             <nav className="flex flex-col px-4 py-4 gap-1">
               {navLinks.map((link) => (

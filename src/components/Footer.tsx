@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Shield, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -8,11 +8,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <Shield className="h-7 w-7 text-accent" />
-              <span className="text-lg font-bold">
-                AVA<span className="text-accent">TEK</span>
-              </span>
+            <Link href="/" className="inline-block mb-4">
+              <img
+                src="/brand/logo-white-horizontal.svg"
+                alt="AVATEK"
+                className="h-7 w-auto"
+              />
             </Link>
             <p className="text-sm text-text-muted leading-relaxed">
               Комплексные решения в области информационной безопасности с 2004 года.

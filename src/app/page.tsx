@@ -72,9 +72,14 @@ export default function HomePage() {
     <>
       {/* ========== HERO ========== */}
       <section className="relative min-h-screen flex items-center justify-center bg-grid overflow-hidden pt-16">
-        {/* Gradient orbs */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-accent/10 rounded-full blur-[128px]" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-cyber-purple/10 rounded-full blur-[128px]" />
+        {/* Gradient orbs — brand blue + olive */}
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-accent/15 rounded-full blur-[128px]" />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-cyber-green/8 rounded-full blur-[128px]" />
+        {/* Brand pattern overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{ backgroundImage: "url(/brand/patterns/pattern-1.svg)", backgroundSize: "400px" }}
+        />
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 flex flex-col items-center text-center gap-10">
           <motion.div
@@ -82,10 +87,10 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-3 py-1 mb-6 text-xs font-mono font-medium text-accent border border-accent/30 rounded-full bg-accent/5">
+            <span className="inline-block px-3 py-1 mb-6 text-xs font-mono font-medium text-cyber-green border border-cyber-green/30 rounded-full bg-cyber-green/5">
               С 2004 года защищаем бизнес
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight tracking-tight font-heading">
               Кибербезопасность
               <br />
               <span className="text-accent">без компромиссов</span>

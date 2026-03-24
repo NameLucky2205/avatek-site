@@ -32,12 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+      <head />
       <body className="font-sans antialiased">
         <Header />
         <main>{children}</main>
