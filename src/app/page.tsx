@@ -137,11 +137,57 @@ export default function HomePage() {
       <section className="py-20 border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <AnimatedCounter end={1000} suffix="+" label="Реализованных проектов" />
-            <AnimatedCounter end={90} suffix="%" label="Постоянных клиентов" />
+            <AnimatedCounter end={2600} suffix="+" label="Реализованных договоров" />
+            <AnimatedCounter end={60} suffix="+" label="Организаций-клиентов" />
             <AnimatedCounter end={20} suffix="+" label="Лет на рынке" />
-            <AnimatedCounter end={50} suffix="%" label="Клиентов по рекомендации" />
+            <AnimatedCounter end={45} suffix="+" label="Медучреждений РС(Я)" />
           </div>
+        </div>
+      </section>
+
+      {/* ========== CLIENTS ========== */}
+      <section className="py-16 border-t border-border bg-surface/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div {...fadeUp} className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Нам <span className="text-accent">доверяют</span>
+            </h2>
+            <p className="mt-3 text-text-muted text-sm max-w-lg mx-auto">
+              Государственные структуры, медицинские учреждения и крупный бизнес Республики Саха (Якутия)
+            </p>
+          </motion.div>
+
+          <motion.div
+            {...fadeUp}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center"
+          >
+            {[
+              { src: "/clients/alrosa.png", alt: "АК Алроса", href: "https://www.alrosa.ru" },
+              { src: "/clients/svfu_white.svg", alt: "СВФУ им. М.К. Аммосова", href: "https://www.s-vfu.ru" },
+              { src: "/clients/pochta.png", alt: "Почта России", href: "https://www.pochta.ru" },
+              { src: "/clients/fssp_logo.svg", alt: "ФССП России", href: "https://fssp.gov.ru" },
+              { src: "/clients/rospotrebnadzor.png", alt: "Роспотребнадзор", href: "https://www.rospotrebnadzor.ru" },
+              { src: "/clients/minzdrav.png", alt: "Минздрав РС(Я)", href: "https://minzdrav.sakha.gov.ru" },
+              { src: "/clients/rosaccreditation_dl.png", alt: "Россаккредитация", href: "https://fsa.gov.ru" },
+              { src: "/clients/fond-rp.svg", alt: "Фонд развития предпринимательства РС(Я)", href: "https://fondrp.ru" },
+              { src: "/clients/center-spid.svg", alt: "Центр СПИД РС(Я)", href: "#" },
+              { src: "/clients/soyuzexpertiza.svg", alt: "АНО Союзэкспертиза", href: "#" },
+            ].map((client) => (
+              <a
+                key={client.alt}
+                href={client.href}
+                target={client.href !== "#" ? "_blank" : undefined}
+                rel={client.href !== "#" ? "noopener noreferrer" : undefined}
+                className="flex items-center justify-center p-4 rounded-xl border border-border bg-surface hover:border-accent/30 hover:bg-surface-hover transition-all duration-300 h-20 opacity-70 hover:opacity-100"
+              >
+                <img
+                  src={client.src}
+                  alt={client.alt}
+                  className="h-10 w-auto max-w-full object-contain opacity-80 hover:opacity-100 transition-opacity"
+                />
+              </a>
+            ))}
+          </motion.div>
         </div>
       </section>
 
